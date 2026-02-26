@@ -7,9 +7,7 @@
 luci-app-samba4：存储共享
 如果不要修改下面设置：
   修改预装插件：armsr/armv8/N1/.config
-    CONFIG_PACKAGE_luci-app-passwall=n
-    CONFIG_PACKAGE_luci-app-podman=n
-    CONFIG_PACKAGE_luci-app-samba4=n
+
   修改预备脚本：armsr/armv8/diy/diy.sh
     git clone https://github.com/Openwrt-Passwall/openwrt-passwall --depth=1 clone/passwall
     git clone https://github.com/Zerogiven-OpenWRT-Packages/luci-app-podman --depth=1 feeds/luci/applications/luci-app-podman
@@ -47,6 +45,9 @@ luci-app-samba4：存储共享
 修改文件：`armsr/armv8/N1/.config`
 * 若要禁用特定插件：找到对应项将 `=y` 改为 `=n`。
 * 本固件已默认精简：`passwall`、`podman`、`samba4`。
+  `CONFIG_PACKAGE_luci-app-passwall=n`
+  `CONFIG_PACKAGE_luci-app-podman=n`
+  `CONFIG_PACKAGE_luci-app-samba4=n`
 
 #### 2. 源码拉取逻辑
 修改文件：`armsr/armv8/diy/diy.sh`
