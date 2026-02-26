@@ -114,11 +114,7 @@ jobs:
             IP路径修改：armsr/armv8/N1/files/etc/config/network
               IP: 192.168.101.2
             账户: root
-            密码: password
-          * 核心调整
-            添加预置momo：nikki源：armsr/armv8/N1/mk_s905d_n1.sh
-              chroot . ash -c "wget -O - https://github.com/nikkinikki-org/OpenWrt-momo/raw/refs/heads/main/feed.sh | ash"
-              chroot . ash -c "wget -O - https://github.com/nikkinikki-org/OpenWrt-nikki/raw/refs/heads/main/feed.sh | ash"          
+            密码: password   
 
     - name: Delete old releases
       uses: dev-drprasad/delete-older-releases@master
