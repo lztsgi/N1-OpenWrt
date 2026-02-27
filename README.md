@@ -38,8 +38,3 @@ luci-app-samba4：存储共享
 * 删除：`git clone https://github.com/Openwrt-Passwall/openwrt-passwall --depth=1 clone/passwall`
 * 删除：`git clone https://github.com/Zerogiven-OpenWRT-Packages/luci-app-podman --depth=1 feeds/luci/applications/luci-app-podman`
 * 修改：`cp -rf clone/amlogic/luci-app-amlogic clone/passwall/luci-app-passwall feeds/luci/applications/`改为`cp -rf clone/amlogic/luci-app-amlogic feeds/luci/applications/`
-
-***
-# 致谢
-本项目基于 [ImmortalWrt-25.12](https://github.com/immortalwrt/immortalwrt/tree/openwrt-25.12) 源码编译，使用 flippy 的[脚本](https://github.com/unifreq/openwrt_packit)和 breakingbadboy 维护的[内核](https://github.com/breakingbadboy/OpenWrt/releases/tag/kernel_stable)打包成完整固件，感谢开发者们的无私分享。<br>
-flippy 固件的更多细节参考[恩山论坛帖子](https://www.right.com.cn/forum/thread-4076037-1-1.html)。
