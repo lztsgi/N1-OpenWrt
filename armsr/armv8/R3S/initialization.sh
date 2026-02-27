@@ -82,7 +82,7 @@ fi
 uci commit network
 uci commit dhcp
 
-# 5. [新增] 强制将 Cron 计划任务的日志级别调低，彻底屏蔽 started 提示
+# [新增] 强制将 Cron 计划任务的日志级别调低，彻底屏蔽 started 提示
 uci set system.@system[0].cronloglevel='9'
 uci commit system
 
