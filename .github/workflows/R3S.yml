@@ -69,6 +69,7 @@ jobs:
     - name: Load Config & Inject Initialization Script
       run: |
         cp armsr/armv8/R3S/.config openwrt/.config
+        # 手动触发用输入值；定时触发没有 input 时回退到 2048 , 用于自动构建任务兜底根分区容量
         echo "CONFIG_TARGET_ROOTFS_PARTSIZE=${{ github.event.inputs.rootfs_size || '2048' }}" >> openwrt/.config
         echo "CONFIG_TARGET_ROOTFS_EXT4FS=y" >> openwrt/.config
         mkdir -p openwrt/files/etc/uci-defaults
