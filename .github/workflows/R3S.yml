@@ -110,7 +110,7 @@ jobs:
         tag_name: R3S_ImmortalWrt_${{ env.FILE_DATE }}
         files: openwrt/bin/targets/rockchip/armv8/*sysupgrade.img.xz
         body: |
-          NanoPi R3S 官方 ImmortalWrt 固件
+          NanoPi R3S ImmortalWrt 固件
           * 架构：Rockchip RK356X
           * 根分区大小：${{ github.event.inputs.rootfs_size }} MB
           * 包含智能网卡探测与初始化配置。
